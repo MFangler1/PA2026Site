@@ -1,0 +1,104 @@
+/* ========== BASE STYLES ========== */
+body {
+  position: relative;
+  margin: 0;
+  background-color: #2d2d2d;
+  color: white;
+  font-family: 'exo-regular', sans-serif;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1, h2, p, ul, li {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+h2 {
+  font-weight: 300;
+  font-size: clamp(1.5rem, 4vw, 2.3rem);
+}
+
+p {
+  font-weight: 200;
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
+  margin: 0.5em auto;
+  max-width: 700px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: clamp(0.95rem, 3vw, 1.1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4em;
+}
+
+li {
+  width: 100%;
+  text-align: center;
+}
+
+/* ========== LINKS ========== */
+a:link {
+  color: orange;
+  text-decoration: none;
+}
+
+a:visited {
+  color: mediumseagreen;
+}
+
+a:hover {
+  color: crimson;
+}
+
+a:active {
+  color: whitesmoke;
+}
+
+/* ========== FONTS ========== */
+@font-face {
+  font-family: 'Oxanium';
+  src: url('fonts/Oxanium-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oxanium-Reg';
+  src: url('fonts/oxanium-v19-latin-regular.woff2') format('woff2'),
+       url('fonts/oxanium-v19-latin-regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'exo-regular';
+  src: url('fonts/exo-v24-latin-regular.woff2') format('woff2'),
+       url('fonts/exo-v24-latin-regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'exo-600';
+  src: url('fonts/exo-v24-latin-600.woff2') format('woff2'),
+       url('fonts/exo-v24-latin-600.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (min-width: 768px) {
+  body {
+    padding: 0 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
